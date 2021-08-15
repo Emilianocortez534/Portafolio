@@ -1,0 +1,131 @@
+
+/*SECTION CONFIG*/
+section {
+    text-align: center;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+/*BACKGROUND */
+
+.home-background{
+    background: url(../../background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+picture img{
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 40px;
+    filter: grayscale(1);
+    transition: filter 0.3s;
+
+}
+
+picture img:hover{ 
+    transition: filter 0.3s;
+    filter: grayscale(0);
+}
+
+.home-info span,h1 {
+    
+    padding: 20px;
+}
+
+.home-info span {
+    color: white;
+}
+
+.home-info h1 {
+    color: #ffa500;
+}
+
+.home-info {
+    font-size: 30px;
+    
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 1047px) {
+    .home-info span, h1{
+        padding: 20px;
+    }
+
+    .home-info{ 
+        font-size: 20px;
+    }
+    picture img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    picture img{
+        position: absolute;
+        display: block;
+        margin: -190px 120px;
+    }
+    .home-info{
+        margin-top: 180px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 500px)  {
+    .home-info{
+        font-size: 18px;
+    }
+    picture img {
+        position: absolute;
+        display: block;
+        margin: -180px 100px;
+    }
+}
+
+@media (max-width: 460px) {
+    .home-info{
+        font-size: 15px;
+    }
+    picture img{
+        position: absolute;
+        display: block;
+        margin: -200px 80px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    picture img{
+        position: absolute;
+        display: block;
+        margin: -200px -20px;
+    }
+}
+
+@media (max-width: 360px) {
+    picture img{
+        margin: -214px 56px
+    }
+}
+
+@media (max-width: 340px) {
+    picture img {
+        margin: -214px 50px;
+    }
+}

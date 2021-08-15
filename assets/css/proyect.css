@@ -1,0 +1,162 @@
+
+/*SECTION CONFIG*/
+.proyect{
+    height: 120vh;
+    padding: 90px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: black;
+    margin: 0 auto;
+}
+
+.contenedor {
+    width: 100%;
+    display: inherit;
+    max-width: 1200px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*PROYEC TITLE&INFO*/
+.proyect-contenedor h1{
+    color: orange;
+    display: inline-flex;
+    border-bottom: 5px solid white;
+
+    font-size: 40px;
+}
+
+.proyect-info h2{
+    color: #999;
+    padding: 50px;
+    font-size: 15px;
+}
+/*EXAMPLE PROYECT*/
+.proyect-example {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/*CARD*/
+.proyect-example .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 8 2px 2px rgba(0, 0, 0, .2);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background: white;
+    margin-left: 90px;
+}
+
+.proyect-example .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 8 12px 16px rgb(255, 255, 255, .2);
+}
+
+/*CARD IMG*/
+.proyect-example .card img{
+    width: 330px;
+    height: 220px;
+    border: 1px solid orange;
+}
+
+
+.proyect-example .card h4{
+    font-weight: 600;
+    padding: 10px;
+    color:orange
+}
+
+.proyect-example .card p{
+    padding: 8 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.proyect-example .card a{
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 106px;
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+/*CONFIG CONTENIDO CARD*/
+.pagina {
+    color: orange !important;
+    font-size: 20px;
+    border-right: 1px solid black;
+    
+}
+.pagina:hover {
+    color: black !important;
+}
+
+.repo {
+    color: black;
+    font-size: 20px;
+    padding: 0 20px;
+
+}
+.repo:hover {
+    color: orange
+}
+
+@media (max-width: 800px) {
+    .proyect-example .card{
+        height: 460px;
+    }
+}
+
+@media (max-width: 980px) and (min-width:775px ){
+    .proyect-example .card{
+        margin-left: 41px;
+    }
+}
+
+@media (max-width: 775px) and (min-width: 690px){
+    .proyect-example{
+        grid-template-columns: 1fr;
+    }
+    .proyect-example .card {
+        margin-left: 190px;
+    }
+    .proyect {
+        height: 240vh;
+    }
+}
+
+@media (max-width: 690px) and (min-width:500px) {
+    .proyect-example{
+        grid-template-columns: 1fr;
+    }
+    .proyect {
+        height: 240vh;
+    }
+    .proyect-example .card{
+        margin-left: 150px;
+    }
+}
+
+@media (max-width:500px) {
+    .proyect-example {
+        grid-template-columns: 1fr;
+    }
+    .proyect-example .card{
+        margin-left: 40px;
+    }
+    .proyect {
+        height: 240vh;
+    }
+}

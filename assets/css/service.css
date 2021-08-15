@@ -1,0 +1,134 @@
+.service{
+    min-height: 100vh;
+    padding: 90px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: black;
+    margin: 0 auto;
+}
+
+.contenedor{
+    width: 100%;
+    display: inherit;
+    max-width: 1200px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.service h1{
+    color: orange;
+}
+
+.service h2{
+    color:#999;
+    font-size: 15px;
+}
+
+.service-contenedor h1{
+    display: inline-flex;
+    border-bottom: 5px solid white;
+    font-size: 40px;
+}
+
+.service-info{
+    padding: 50px;
+}
+
+.grid-service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+}
+
+.servicios{
+    background: #191919;
+    font-size: 15px;
+    color: #8e8e8e;
+    padding: 35px;
+    transition: all 0.3s;
+    min-width: 130px;
+    border-radius: 5px;
+}
+
+.servicios-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icon-servicios{
+    font-size: 100px;
+}
+
+.servicios-info{
+    color: #999;
+}
+
+.instagram p{
+    padding-top: 10px;
+}
+
+.gmail p{
+    padding-top: 10px;
+}
+
+.linkedin p{
+    padding-top: 10px;
+}
+
+@media (max-width: 390px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 430px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 470px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 500px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 530px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 570px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 630px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 670px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .grid-service {
+        grid-template-columns: 1fr;
+    }
+}
