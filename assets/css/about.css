@@ -1,0 +1,295 @@
+
+/*SECTION CONFIG*/
+
+.about{
+    min-height: 100vh;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.about p, h1{
+    color: black
+}
+
+/*CONTENEDOR DE ABOUT*/
+.about-contenedor{
+    width: 100%;
+    display: inherit;
+    max-width: 1200px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/*TITLE ABOUT*/
+.title {
+    
+    display: inline;
+    margin: auto;
+
+}
+
+.title h1{
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: #ffa500;
+    display: inline-flex;
+
+}
+
+.about h1{
+    border-bottom: 5px solid black;
+}
+
+body.darkmode .about h1{
+    border-bottom:  5px solid white;
+}
+
+/*GRID*/
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+
+/*info about*/
+
+.info-about{
+    text-align: left;
+    padding-right: 80px;
+    padding: 20px;
+    line-height: 40px;
+}
+
+.info-about h2{
+    color: #999;
+    padding-bottom: 100px;
+}
+
+/*CV*/
+.cv{
+    display: flex;
+    background: orange;
+    font-size: 20px;
+    width: 170px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    margin-top: 50px;
+    margin-left: 30%;
+    border-radius: 20px;
+}
+
+.cv:hover{
+    background-color: #cc510a;
+}
+
+
+/*skills grid*/
+
+.grid-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/*skills title*/
+
+.title-skills{
+    grid-column: span 3;
+    color: #8e8e8e;
+    text-align: left;
+}
+
+.title-skills h3{
+    color: #999;
+    text-align: left;
+    padding-left: 20px;
+    display: block;
+
+}
+/*items skills*/
+.items-skills{
+    background: #191919;
+    font-size: 50px;
+    color: #8e8e8e;
+    padding: 60px;
+    transition: all 0.3s;
+    min-width: 166px;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.5);
+    
+
+}
+body.darkmode .items-skills{
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255, 0.5);
+}
+
+/*skill name*/
+.skill-name {
+    font-size: 16px;
+    display: fixed;
+    padding-top: 10px;
+}
+
+/*pseudo skills*/
+.fa-html5:hover {
+    color: #ffa500;
+    cursor: pointer;
+}
+.fa-css3-alt:hover {
+    color: blue;
+    cursor: pointer;
+}
+.fa-js:hover{
+    color:yellow;
+    cursor: pointer;
+}
+.fa-java:hover{
+    color: #744e3b;
+    cursor: pointer;
+}
+
+.fa-korvue:hover{
+    color:#a4c639;
+    cursor: pointer;
+}
+
+.fa-php:hover{
+    color: violet;
+    cursor: pointer;
+}
+.fa-python:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.fa-react:hover{
+    color: aquamarine;
+    cursor: pointer;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 991px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .grid-skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .items-skills{
+        min-width: 176px;
+        padding: 50px;
+        margin-left: -9px
+    }
+    .icon-item {
+        margin: auto;
+        font-size: 90px;
+        
+    }
+}
+
+
+@media (max-width: 650px) {
+    .items-skills{
+        min-width: max-content;
+        padding: 40px;
+        margin-left: -9px
+    }
+    .icon-item {
+        margin: auto;
+        font-size: 60px;
+        
+    }
+}
+
+
+@media (max-width: 550px) {
+   
+
+    .items-skills{
+        min-width: max-content;
+        padding: 35px;
+        margin-left: -9px
+    }
+    .icon-item {
+        margin: auto;
+        font-size: 60px;
+        
+    }
+}
+
+
+@media (max-width: 500px) {
+    .items-skills {
+        min-width: 118px;
+        padding: 17px;
+        margin-left: 6px;
+    }
+    .skill-name {
+        font-size: 16px;
+    }
+    .icon-item {
+        margin: auto;
+        font-size: 50px;
+        
+    }
+}
+
+@media (max-width: 425px) {
+    .skill-name {
+        font-size: 10px;
+    }
+    .items-skills{
+        min-width: 108px;
+        padding: 28px;
+        margin-left: 2px;
+    }
+}
+
+@media (max-width: 380px) {
+    .items-skills{
+        min-width: 100px;
+        padding: 18px;
+        margin-left: -4px;
+    }
+    .icon-node {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-right: -7px;
+    }
+
+    
+}
+
+@media (max-width: 330px) {
+    .items-skills {
+        min-width: 80px;
+        padding: 12px;
+        margin-left: 2px;
+        }
+}   .grid-skill {
+    grid-template-columns: 1fr;
+}
+
