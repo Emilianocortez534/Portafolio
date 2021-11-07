@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 /*OPCIONES GENERALES*/
 * {
     margin: 0;
@@ -68,7 +70,7 @@ header{
     border-bottom: 1px solid;
     position: fixed;
     width: 100%;
-    z-index: 90003;
+    z-index: 90004;
 
 }
 

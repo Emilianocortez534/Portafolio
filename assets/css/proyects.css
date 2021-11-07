@@ -1,6 +1,6 @@
 /*SECTION CONFIG*/
 .proyect{
-    height: 120vh;
+    min-height: 180vh;
     padding: 90px 0;
     justify-content: center;
     align-items: center;
@@ -120,6 +120,12 @@
     }
     .proyect-example .card{
         margin-left: 20%;
+    }
+}
+
+@media(max-width: 880px){
+    .proyect-example .card{
+        margin-left: 10%;
     }
 }
 
