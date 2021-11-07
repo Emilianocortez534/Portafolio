@@ -1,0 +1,151 @@
+
+
+.contact{
+    min-height: 100vh;
+    padding: 90px 0;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    z-index: 90002;
+}
+
+.contenedor{
+   display: inherit;
+   width: 100%;
+   max-width: 1200px;
+   justify-content: inherit;
+   margin: 0 auto;
+   padding: 0 20px;
+
+}
+
+.contact-contenedor h1{
+    color: orange;
+    display: inline-flex;
+    border-bottom: 5px solid white;
+    font-size: 40px;
+}
+
+.contact-info p{
+    color: #999;
+    padding: 50px;
+    font-size: 15px;
+}
+
+
+.contact-email{
+    background: #191919;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+}
+
+body.darkmode .contact-email{
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255, 0.5);
+}
+
+.contact-email form{
+    position:relative;
+    top: 50px;
+}
+
+.contact-email p{
+    margin-bottom: 12px;
+    color: white;
+}
+
+.contact-email input{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.contact-email textarea{
+    border-radius: 5px;
+    border: none;
+    margin: 0spx;
+    width: 275px;
+    height: 86px;
+}
+
+.contact-email button{
+    margin: auto;
+    align-items: center;
+    margin-left: 10%;
+    width: 170px;
+    height: 50px;
+    background: white;
+     border-radius: 14px; 
+     border: 2px solid #4CAF50; 
+}
+
+.contact-email button:hover {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+@media (max-width: 1175px){
+    .contact{
+        margin-top: 40%;
+    }
+}
+
+@media (max-width: 1010px){
+    .contact{
+        margin-top: 45%;
+    }
+}
+
+@media (max-width: 920px){
+    .contact{
+        margin-top: 50%;
+    }
+}
+
+@media (max-width: 824px){
+    .contact{
+        margin-top: 190%;
+    }
+}
+
+
+
+@media (max-width: 784px){
+    .contact{
+        margin-top: 184%;
+    }
+}
+
+
+
+@media (max-width: 650px){
+    .contact-email{
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 560px){
+    .contact-email{
+        width: 400px;
+    }
+    .contact{
+        margin-top: 192%;
+    }
+}
+
+@media (max-width: 553px){
+
+    .contact{
+        margin-top: 200%;
+    }
+}
+
+@media (max-width: 513px){
+
+    .contact{
+        margin-top: 220%;
+    }
+}
