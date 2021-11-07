@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/css/service.css">
     <link rel="stylesheet" href="../assets/css/flotantes.css">
     <link rel="stylesheet" href="../assets/css/proyects.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
     <script src="https://kit.fontawesome.com/7d7ba43b2d.js" crossorigin="anonymous"></script>
     
 </head>
@@ -30,6 +31,7 @@
         <ul class="menu-items">
             <li><a href="#home">家</a></li>
             <li><a href="#about">だいたい</a></li>
+            <li><a href="#service">サービス</a></li>
             <li><a href="#proyect">プロジェクト</a></li>
             <li><a href="#contact">コンタクト</a></li>
             <div>
@@ -48,7 +50,7 @@
     <marquee scrollamount="6" direction="right">
         <img src="../video/footer.gif" alt="">
     </marquee>
-    <section class="home">
+    <section class="home" id="home">
         <!--BACKGROUND-->
         <div class="home-background" style="background-image: url(../video/home.gif);"></div>
         <!--INFORMACION-->
@@ -58,7 +60,7 @@
             <span>-フロントエンドの開発者-</span>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <!--CONTENEDOR-->
         <div class="about-contenedor">
             <!--TITLE-->
@@ -125,7 +127,7 @@
         </div>
     </section>
     <!--SERVICE-->
-    <section class="service">
+    <section class="service" id="service">
         <!--CONTENDOR-->
         <div class="contenedor">
             <!--TITLE&INFO-->
@@ -188,7 +190,7 @@
             </label>
         </div>
     </div>
-    <section class="proyect">
+    <section class="proyect" id="proyect">
         <!--PROYECT CONT-->
         <div class="contenedor">
             <!--PROYECT TITLE&INFO-->
@@ -248,6 +250,35 @@
                     <a href="https://emilianocortez534.github.io/copia-a-pagina-principal-de-uala/" class="pagina" target="_blank">ページを見る</a>
                     <a href="https://github.com/Emilianocortez534/copia-a-pagina-principal-de-uala" class="repo">リポジトリ</a>
                 </div>
+            </div>
+        </div>
+    </section>
+        <section class="contact" id="contact" >
+        <div class="contenedor">
+            <div class="contact-contenedor">
+                <h1>コンタクト</h1>
+                <div class="contact-info">
+                    <p>一緒に仕事をしたい場合は私に連絡してください.</p>
+                </div>
+            </div>
+            <div class="contact-email">
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                      <label>あなたの名前：
+                        <input type="text" name="name" /></label>   
+                    </p>
+                    <p>
+                      <label>
+                        あなたのEメール： <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>メッセージ：
+                        <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                      <button type="submit">送信</button>
+                    </p>
+                  </form>
             </div>
         </div>
     </section>
